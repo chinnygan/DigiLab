@@ -1,0 +1,22 @@
+## COMMANDS ##
+LOAD <destination_reg> <mem_address>
+WRITE <data_reg> <mem_address>
+ADD <destination_reg>
+SUB <destination_reg>
+MUL <destination_reg>
+SHIFL <destination_reg>
+SHIFTR <destination_reg>
+INCRA <destination_reg>
+INCRB <destination_reg>
+DECA <destination_reg>
+DECB <destination_reg>
+BREQ <destination_reg>
+BGTQ <destination_reg>
+BLTQ <destination_reg>
+GOTO <mem_address>
+GOTO_IDLE
+FUNCTION_CALL <mem_address>
+RETURN
+DEREF <deref_reg>
+
+'#' will make the assembler ignore the line
