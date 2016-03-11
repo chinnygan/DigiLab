@@ -1,3 +1,6 @@
+format
+python assembler.py <input_file> <output_file>
+
 ## COMMANDS ##
 LOAD <destination_reg> <mem_address>
 WRITE <data_reg> <mem_address>
