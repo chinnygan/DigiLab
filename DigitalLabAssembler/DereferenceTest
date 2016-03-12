@@ -1,0 +1,11 @@
+LOAD A 00
+LOAD B 00 # B = 1
+INCRA A
+INCRA A
+WRITE A 05 # 03 written to mem address 05
+INCRB B # B = 2
+INCRB B # B = 3
+INCRB B # B = 4
+INCRB B # B = 5
+DEREF B # Mem address 5 written to B
+# If writes and loads work we should expect registers B == 3

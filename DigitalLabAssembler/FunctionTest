@@ -1,0 +1,10 @@
+GOTO start
+LABEL function
+INCRA A
+RETURN
+LABEL start
+LOAD A 00
+FUNCTION_CALL function
+LOAD B 00
+INCRB B
+# If functions work, we should expect regs to be A == B == 1

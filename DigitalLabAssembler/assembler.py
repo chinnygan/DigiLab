@@ -35,8 +35,8 @@ with open(input_file, 'r') as f:
 
             # Process labels, track line counts
             if command == "LABEL":
-		label = tokens[1]
-		labels[label] = hex(line_count)[2:]
+                label = tokens[1]
+                labels[label] = hex(line_count)[2:]
                 line_count -= 1 # MINUS ONE FROM LABELS, THEY DONT APPEAR IN FINAL FILE
             elif command == "LOAD":
                 line_count += 1 # NEED TO ADD ONE TO 2 BYTE COMMANDS
@@ -59,13 +59,13 @@ with open(input_file, 'r') as f:
             elif command == "DECA":
                 pass
             elif command == "DECB":
-		pass
+                pass
             elif command == "AND":
-		pass
+                pass
             elif command == "XOR":
-		pass
+                pass
             elif command == "OR":
-		pass
+                pass
             elif command == "BREQ":
                 line_count += 1
             elif command == "BGTQ":
@@ -83,7 +83,7 @@ with open(input_file, 'r') as f:
             elif command == "DEREF":
                 pass
             elif command == "#":
-		line_count -= 1
+                line_count -= 1
             else:
                 pass
 
@@ -95,7 +95,7 @@ with open(input_file, 'r') as f:
         for line in f:
             line_count += 1;
             tokens = line.split()
-			
+
             command = tokens[0]
 
             if command=="LABEL":
@@ -138,35 +138,38 @@ with open(input_file, 'r') as f:
 
             elif command == "DECB":
                 writeALUOp("8", tokens[1])
-				
+
             elif command == "AND":
                 writeALUOp("C", tokens[1])
-				
+
             elif command == "XOR":
                 writeALUOp("D", tokens[1])
-				
+
             elif command == "OR":
-                writeALUOp("E", tokens[1])	
-				
+                writeALUOp("E", tokens[1])
+
             elif command == "BREQ":
-                label = tokens[2]
+                label = tokens[1]
                 writeLineWithMem("9", "6", labels[label])
 
             elif command == "BGTQ":
-                writeLineWithMem("A", "6", tokens[2])
+                label = tokens[1]
+                writeLineWithMem("A", "6", labels[label])
 
             elif command == "BLTQ":
-                writeLineWithMem("B", "6", tokens[2])
+                label = tokens[1]
+                writeLineWithMem("B", "6", labels[label])
 
             elif command == "GOTO":
-		label = tokens[1]
+                label = tokens[1]
                 writeLineWithMem(default_fill, "7", labels[label])
 
             elif command == "GOTO_IDLE":
                 writeLine(default_fill, "8")
 
             elif command == "FUNCTION_CALL":
-                writeLineWithMem(default_fill, "9", tokens[1])
+                label = tokens[1]
+                writeLineWithMem(default_fill, "9", labels[label])
 
             elif command == "RETURN":
                 writeLine(default_fill, "A")
@@ -178,7 +181,7 @@ with open(input_file, 'r') as f:
                     writeLine(default_fill, "C")
 
             elif command == "#":
-		line_count -= 1
+                line_count -= 1
                 # Comment, so ignore
                 print "Ignoring " + line
             else:

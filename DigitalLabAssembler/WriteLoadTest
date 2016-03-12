@@ -1,0 +1,6 @@
+LOAD A 00
+LOAD B 03
+ADD A
+WRITE A 0A
+LOAD B 0A
+# If writes and loads work we should expect registers A == B == 2 

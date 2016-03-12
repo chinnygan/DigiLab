@@ -470,9 +470,10 @@ module Processor(
         begin
             if(AluOut[0])
                 NextState = IF_A_EQUALITY_B_GOTO_0;
-            else
+            else begin
                 NextState = IF_A_EQUALITY_B_GOTO_1;
                 NextProgCounter = CurrProgCounter + 2;
+                end
         end
         
         IF_A_EQUALITY_B_GOTO_0:  // Wait for data to be loaded

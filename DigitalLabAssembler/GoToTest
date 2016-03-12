@@ -1,0 +1,7 @@
+LOAD A 00
+LOAD B 00
+GOTO skip
+INCRA A
+LABEL skip
+INCRB B
+# If writes and loads work we should expect registers B == A + 1

@@ -1,0 +1,7 @@
+LOAD A 00
+LOAD B 00
+BREQ skip
+INCRA A
+LABEL skip
+INCRB B
+# If branch equals works, B == A + 1
