@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Processor_Wrapper.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Processor_Wrapper.tcl
+EAStep vivado -log IRTransmitterMaster.vds -m64 -mode batch -messageDb vivado.pb -notrace -source IRTransmitterMaster.tcl

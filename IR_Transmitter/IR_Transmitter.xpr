@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="5" Path="/home/s1231893/Desktop/DigitalSystemsLab/DigiLab/IR_Transmitter/IR_Transmitter.xpr">
+<Project Version="7" Minor="5" Path="/afs/inf.ed.ac.uk/user/s12/s1231893/Digilab/IR_Transmitter/IR_Transmitter.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="39d46009a5a9465886c46b2756ad5c69"/>
@@ -18,39 +18,8 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/NewCounter.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/Snake/Seg7Decoder.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Snake/Seg7Decoder.v"/>
-          <Attr Name="ImportTime" Val="1414059514"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/IRTransmitterSM.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/IRTransmitterMaster.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/proc/ALU.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/proc/ALU.v"/>
           <Attr Name="ImportTime" Val="1457619326"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -60,7 +29,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/proc/Timer.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/proc/Timer.v"/>
           <Attr Name="ImportTime" Val="1457619323"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -70,7 +38,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/proc/ROM.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/proc/ROM.v"/>
           <Attr Name="ImportTime" Val="1457619321"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -80,7 +47,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/proc/RAM.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/proc/RAM.v"/>
           <Attr Name="ImportTime" Val="1457619325"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -90,7 +56,6 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/proc/Processor.v">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/proc/Processor.v"/>
           <Attr Name="ImportTime" Val="1457619324"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -100,6 +65,39 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Processor_Wrapper.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/NewCounter.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Snake/Seg7Decoder.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Snake/Seg7Decoder.v"/>
+          <Attr Name="ImportTime" Val="1414059514"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/IRTransmitterSM.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/IRTransmitterMaster.v">
+        <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -108,7 +106,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="IRTransmitterMaster"/>
+        <Option Name="TopModule" Val="Processor_Wrapper"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
