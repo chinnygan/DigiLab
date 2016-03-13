@@ -18,8 +18,6 @@ input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 default_fill = "F"
-interrupt_timer_address = "0F"
-interrupt_mouse_address = "00"
 
 line_count = -1;
 
@@ -199,13 +197,8 @@ with open(input_file, 'r') as f:
                 print "Not a valid command on line " + str(line_count) + ": " + line
                 w.write("Not a valid command\n")
 
-        while line_count < 253:
-            writeLine(default_fill, default_fill)
-            line_count += 1
-
-        writeLine(interrupt_timer_address[0], interrupt_timer_address[1])
-        writeLine(interrupt_mouse_address[0], interrupt_mouse_address[1])
-
+        while line_count < 255:
+            writeLine(default_fill, "F")
 
 for label, hval in labels.items():
     print '{}\t{}'.format(label,hval)

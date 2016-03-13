@@ -29,6 +29,8 @@ module Processor_Wrapper(
     wire [7:0] ROM_DATA, ROM_ADDRESS, BUS_DATA, BUS_ADDR;
     wire [1:0] BUS_INTERRUPTS_RAISE, BUS_INTERRUPTS_ACK;
     
+    assign BUS_INTERRUPTS_RAISE[1] = 1'b0;
+    
     Processor Proc (    .CLK(CLK),
                         .RESET(RESET),
                         // RAM
