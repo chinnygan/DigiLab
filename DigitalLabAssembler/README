@@ -13,13 +13,14 @@ INCRA <destination_reg>
 INCRB <destination_reg>
 DECA <destination_reg>
 DECB <destination_reg>
-BREQ <destination_reg>
-BGTQ <destination_reg>
-BLTQ <destination_reg>
-GOTO <mem_address>
+BREQ <destination_label>
+BGTQ <destination_label>
+BLTQ <destination_label>
+GOTO <label>
 GOTO_IDLE
-FUNCTION_CALL <mem_address>
+FUNCTION_CALL <label>
 RETURN
 DEREF <deref_reg>
+LABEL <label>
 
 '#' will make the assembler ignore the line
