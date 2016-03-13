@@ -4,6 +4,9 @@ import sys
 def writeLine(fill, number_command):
     w.write(fill + number_command + "\n")
 
+def writeAddr(addr):
+    w.write(addr + "\n")
+
 def writeALUOp(ALU_command_select, reg):
     if reg == "A":
         w.write(ALU_command_select + "4" +"\n")
@@ -18,8 +21,8 @@ input_file = sys.argv[1]
 output_file = sys.argv[2]
 
 default_fill = "F"
-interrupt_timer_address = "0F"
-interrupt_mouse_address = "00"
+interrupt_timer_address = "timer_interrupt" # Give the label here, make sure it is in input file
+interrupt_mouse_address = "mouse_interrupt"
 
 line_count = -1;
 
@@ -203,8 +206,17 @@ with open(input_file, 'r') as f:
             writeLine(default_fill, default_fill)
             line_count += 1
 
-        writeLine(interrupt_timer_address[0], interrupt_timer_address[1])
-        writeLine(interrupt_mouse_address[0], interrupt_mouse_address[1])
+        # Timer interrupt adrress defaults to 00
+        if interrupt_timer_address in labels:
+            writeAddr(labels[interrupt_timer_address])
+        else:
+            writeAddr("00")
+
+        # Mouse interrupt adrress defaults to 00
+        if interrupt_mouse_address in labels:
+            writeAddr(labels[interrupt_mouse_address])
+        else:
+            writeAddr("00")
 
 
 for label, hval in labels.items():
