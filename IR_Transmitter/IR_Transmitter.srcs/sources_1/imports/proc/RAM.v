@@ -55,17 +55,18 @@ begin
 // Brute-force RAM address decoding. Think of a simpler way...
     if((BUS_ADDR >= RAMBaseAddr) & (BUS_ADDR < RAMBaseAddr + 128)) 
     begin
+    
         if(BUS_WE) 
         begin
             Mem[BUS_ADDR[6:0]] <= BufferedBusData;
             RAMBusWE <= 1'b0;
-        end 
-        else
+        end else
             RAMBusWE <= 1'b1;
-        end 
-        else
-            RAMBusWE <= 1'b0;
-            Out <= Mem[BUS_ADDR[6:0]];
+            
+    end else
+        RAMBusWE <= 1'b0;
+            
+    Out <= Mem[BUS_ADDR[6:0]];
 end
 
 endmodule

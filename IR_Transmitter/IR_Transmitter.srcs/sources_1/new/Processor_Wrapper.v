@@ -27,6 +27,7 @@ module Processor_Wrapper(
     );
     
     wire [7:0] ROM_DATA, ROM_ADDRESS, BUS_DATA, BUS_ADDR;
+    wire [1:0] BUS_INTERRUPTS_RAISE, BUS_INTERRUPTS_ACK;
     
     Processor Proc (    .CLK(CLK),
                         .RESET(RESET),
@@ -63,8 +64,8 @@ module Processor_Wrapper(
                         .BUS_DATA(BUS_DATA),
                         .BUS_ADDR(BUS_ADDR),
                         .BUS_WE(BUS_WE),
-                        .BUS_INTERRUPT_RAISE(BUS_INTERRUPTS_RAISE),
-                        .BUS_INTERRUPT_ACK(BUS_INTERRUPTS_ACK)
+                        .BUS_INTERRUPT_RAISE(BUS_INTERRUPTS_RAISE[0]),
+                        .BUS_INTERRUPT_ACK(BUS_INTERRUPTS_ACK[0])
                         
                         );
                          

@@ -53,8 +53,8 @@ always@(posedge CLK)
 begin
     if(RESET)
         InterruptRate <= InitialIterruptRate;
-    else if((BUS_ADDR == TimerBaseAddr + 8'h01) & BUS_WE)
-        InterruptRate <= BUS_DATA;
+//    else if((BUS_ADDR == TimerBaseAddr + 8'h01) & BUS_WE)
+//        InterruptRate <= BUS_DATA;
 end
 
 //Interrupt Enable Configuration - If this is not set to 1, no interrupts will be
