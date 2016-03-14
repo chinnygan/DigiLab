@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1457973386">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="PA-TCL" Name="Processor_Wrapper.tcl"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Processor_Wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="OPT-DCP" Name="Processor_Wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Processor_Wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Processor_Wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Processor_Wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Processor_Wrapper_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Processor_Wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Processor_Wrapper_io_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Processor_Wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Processor_Wrapper.bit"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Processor_Wrapper_timing_summary_routed.rpx"/>
+  <File Type="BG-BIN" Name="Processor_Wrapper.bin"/>
+  <File Type="BITSTR-MSK" Name="Processor_Wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="Processor_Wrapper_clock_utilization_routed.rpt"/>
+  <File Type="BG-BGN" Name="Processor_Wrapper.bgn"/>
+  <File Type="BITSTR-RBT" Name="Processor_Wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="Processor_Wrapper.nky"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Processor_Wrapper_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Processor_Wrapper_bd.bmm"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Processor_Wrapper_timing_summary_postroute_physopted.rpx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RDI-RDI" Name="Processor_Wrapper.vdi"/>
-  <File Type="BG-DRC" Name="Processor_Wrapper.drc"/>
-  <File Type="BG-BGN" Name="Processor_Wrapper.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="Processor_Wrapper.sysdef"/>
-  <File Type="BITSTR-MMI" Name="Processor_Wrapper.mmi"/>
-  <File Type="BITSTR-BMM" Name="Processor_Wrapper_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="Processor_Wrapper.nky"/>
-  <File Type="BITSTR-RBT" Name="Processor_Wrapper.rbt"/>
-  <File Type="BITSTR-MSK" Name="Processor_Wrapper.msk"/>
-  <File Type="BG-BIN" Name="Processor_Wrapper.bin"/>
-  <File Type="BG-BIT" Name="Processor_Wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Processor_Wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Processor_Wrapper_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Processor_Wrapper_postroute_physopt.dcp"/>
-  <File Type="ROUTE-CLK" Name="Processor_Wrapper_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="Processor_Wrapper.drc"/>
   <File Type="ROUTE-SIMILARITY" Name="Processor_Wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Processor_Wrapper_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Processor_Wrapper.mmi"/>
+  <File Type="PHYSOPT-DCP" Name="Processor_Wrapper_physopt.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="Processor_Wrapper.sysdef"/>
+  <File Type="PHYSOPT-DRC" Name="Processor_Wrapper_drc_physopted.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Processor_Wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Processor_Wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Processor_Wrapper_route_status.pb"/>
@@ -27,27 +42,12 @@
   <File Type="ROUTE-DRC-PB" Name="Processor_Wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="Processor_Wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DCP" Name="Processor_Wrapper_routed.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Processor_Wrapper_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Processor_Wrapper_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Processor_Wrapper_postplace_pwropt.dcp"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Processor_Wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="Processor_Wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-CTRL" Name="Processor_Wrapper_control_sets_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Processor_Wrapper_utilization_placed.pb"/>
   <File Type="PLACE-UTIL" Name="Processor_Wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-CLK" Name="Processor_Wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="Processor_Wrapper_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="Processor_Wrapper_placed.dcp"/>
-  <File Type="PWROPT-DRC" Name="Processor_Wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Processor_Wrapper_pwropt.dcp"/>
-  <File Type="OPT-HWDEF" Name="Processor_Wrapper.hwdef"/>
-  <File Type="OPT-DRC" Name="Processor_Wrapper_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Processor_Wrapper_opt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Processor_Wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="PA-TCL" Name="Processor_Wrapper.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/NewCounter.v">
