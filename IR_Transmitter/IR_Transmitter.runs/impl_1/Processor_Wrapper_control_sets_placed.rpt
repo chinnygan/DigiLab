@@ -1,0 +1,78 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (lin64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Mar 14 16:36:47 2016
+| Host         : tlf40.see.ed.ac.uk running 64-bit Scientific Linux release 7.1 (Nitrogen)
+| Command      : report_control_sets -verbose -file Processor_Wrapper_control_sets_placed.rpt
+| Design       : Processor_Wrapper
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    25 |
+| Minimum Number of register sites lost to control set restrictions |    57 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           19 |
+| No           | No                    | Yes                    |               6 |            1 |
+| No           | Yes                   | No                     |             132 |           52 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              48 |           34 |
+| Yes          | Yes                   | No                     |             121 |           37 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+----------------------------------------------------------+-----------------------+------------------+----------------+
+|             Clock Signal             |                       Enable Signal                      |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------------------------------+----------------------------------------------------------+-----------------------+------------------+----------------+
+|  IR/IR/BlueCar/pulseGen              |                                                          |                       |                2 |              2 |
+|  IR/IR/RedCar/CLK                    |                                                          |                       |                2 |              2 |
+|  IR/IR/YellowCar/CLK                 |                                                          |                       |                1 |              2 |
+|  IR/IR/GreenCar/pulseGen             |                                                          |                       |                1 |              2 |
+|  IR/IR/BlueCar/pulseGen              | IR/IR/BlueCar/FSM_sequential_PacketState[3]_i_1_n_0      | IR/IR/BlueCar/AR[0]   |                1 |              4 |
+|  CLK_IBUF_BUFG                       | Proc/E[0]                                                | RESET_IBUF            |                1 |              4 |
+|  IR/IR/RedCar/CLK                    | IR/IR/RedCar/FSM_sequential_PacketState[3]_i_1__0_n_0    | IR/IR/RedCar/AR[0]    |                1 |              4 |
+|  IR/IR/YellowCar/CLK                 | IR/IR/YellowCar/FSM_sequential_PacketState[3]_i_1__1_n_0 | IR/IR/YellowCar/AR[0] |                2 |              4 |
+|  IR/IR/GreenCar/pulseGen             | IR/IR/GreenCar/FSM_sequential_PacketState[3]_i_1__2_n_0  | IR/IR/GreenCar/AR[0]  |                2 |              4 |
+|  CLK_IBUF_BUFG                       | Proc/FSM_sequential_CurrState[4]_i_1_n_0                 | RESET_IBUF            |                4 |              5 |
+|  IR/IR/AllPacketTriggerGen/TRIGG_OUT |                                                          | RESET_IBUF            |                1 |              6 |
+|  CLK_IBUF_BUFG                       | Proc/ALU0/E[0]                                           | RESET_IBUF            |                4 |              8 |
+|  IR/IR/GreenCar/pulseGen             | IR/IR/GreenCar/Count[7]_i_1__2_n_0                       | IR/IR/GreenCar/AR[0]  |                7 |              8 |
+|  CLK_IBUF_BUFG                       | Proc/CurrRegB[7]_i_1_n_0                                 | RESET_IBUF            |                2 |              8 |
+|  IR/IR/YellowCar/CLK                 | IR/IR/YellowCar/Count[7]_i_1__1_n_0                      | IR/IR/YellowCar/AR[0] |                8 |              8 |
+|  CLK_IBUF_BUFG                       | Proc/CurrRegA[7]_i_1_n_0                                 | RESET_IBUF            |                2 |              8 |
+|  CLK_IBUF_BUFG                       | Proc/CurrProgContext[7]_i_1_n_0                          | RESET_IBUF            |                2 |              8 |
+|  IR/IR/RedCar/CLK                    | IR/IR/RedCar/Count[7]_i_1__0_n_0                         | IR/IR/RedCar/AR[0]    |                6 |              8 |
+|  CLK_IBUF_BUFG                       | Proc/CurrBusDataOutWE_i_1_n_0                            | RESET_IBUF            |                2 |              8 |
+|  CLK_IBUF_BUFG                       | Proc/InterruptRate_reg[7][0]                             | RESET_IBUF            |                3 |              8 |
+|  IR/IR/BlueCar/pulseGen              | IR/IR/BlueCar/Count[7]_i_1_n_0                           | IR/IR/BlueCar/AR[0]   |                7 |              8 |
+|  CLK_IBUF_BUFG                       |                                                          |                       |               13 |             20 |
+|  CLK_IBUF_BUFG                       | Time/[0]_i_2_n_0                                         | Proc/Timer_reg[31]    |                8 |             32 |
+|  CLK_IBUF_BUFG                       | Time/TargetReached1                                      | RESET_IBUF            |                9 |             32 |
+|  CLK_IBUF_BUFG                       |                                                          | RESET_IBUF            |               52 |            132 |
++--------------------------------------+----------------------------------------------------------+-----------------------+------------------+----------------+
+
+

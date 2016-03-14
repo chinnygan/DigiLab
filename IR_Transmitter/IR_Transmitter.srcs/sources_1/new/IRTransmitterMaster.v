@@ -68,7 +68,7 @@ module IRTransmitterMaster(
     
     // The all drive mode will cycle between all four state machines, giving each a 
     // 10Hz Frequency output using this state machine
-    always@(posedge allPacketTrigger) begin
+    always@(posedge allPacketTrigger or posedge RESET) begin
         if(RESET) begin
                 AllState <= 2'b00;
                 AllBlue      <= 1'b0;

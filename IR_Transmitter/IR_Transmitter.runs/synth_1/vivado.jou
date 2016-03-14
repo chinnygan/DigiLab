@@ -2,9 +2,9 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Sat Mar 12 16:57:08 2016
-# Process ID: 5862
-# Log file: /afs/inf.ed.ac.uk/user/s12/s1231893/Digilab/IR_Transmitter/IR_Transmitter.runs/synth_1/IRTransmitterMaster.vds
-# Journal file: /afs/inf.ed.ac.uk/user/s12/s1231893/Digilab/IR_Transmitter/IR_Transmitter.runs/synth_1/vivado.jou
+# Start of session at: Mon Mar 14 16:35:50 2016
+# Process ID: 15270
+# Log file: /home/s1231893/DigiLab/IR_Transmitter/IR_Transmitter.runs/synth_1/Processor_Wrapper.vds
+# Journal file: /home/s1231893/DigiLab/IR_Transmitter/IR_Transmitter.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source IRTransmitterMaster.tcl -notrace
+source Processor_Wrapper.tcl -notrace

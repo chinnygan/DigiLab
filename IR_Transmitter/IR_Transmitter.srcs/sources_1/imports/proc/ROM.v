@@ -33,7 +33,7 @@ parameter RAMAddrWidth = 8;
 reg [7:0] ROM [2**RAMAddrWidth-1:0];
 
 // Load program
-initial $readmemh("/afs/inf.ed.ac.uk/user/s12/s1231893/Digilab/IR_Transmitter/Complete_Demo_ROM.txt", ROM);
+initial $readmemh("/home/s1231893/DigiLab/IR_Transmitter/Complete_Demo_ROM.txt", ROM);
 
 //single port ram
 always@(posedge CLK)

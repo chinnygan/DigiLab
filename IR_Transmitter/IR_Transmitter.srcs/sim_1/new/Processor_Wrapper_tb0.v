@@ -23,10 +23,13 @@
 module Processor_Wrapper_tb0();
 
     reg CLK, RESET;
+    
+    wire IR;
 
     Processor_Wrapper uut ( 
                             .CLK(CLK),
-                            .RESET(RESET)
+                            .RESET(RESET),
+                            .IR_LED(IR)
                             );
                             
     always forever begin 

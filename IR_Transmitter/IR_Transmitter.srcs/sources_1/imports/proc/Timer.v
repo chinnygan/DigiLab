@@ -77,7 +77,7 @@ begin
         DownCounter <= 0;
     else 
     begin
-        if(DownCounter == 32'd49999)
+        if(DownCounter == 32'd99999) //Changed for 100MHz clock
             DownCounter <= 0;
         else
             DownCounter <= DownCounter + 1'b1;
